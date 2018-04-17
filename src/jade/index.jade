@@ -1,0 +1,29 @@
+extends templates/layout
+include templates/mixins
+include templates/register
+include templates/send
+include templates/sign
+include templates/recover
+include templates/subscribe
+
+block header
+  header.container
+    .row
+      h1.text-hide.text-center
+        a(href="#") masteralb
+          img(src="img/master-logo.png" alt="masteralb" class="img-responsive center-block")
+
+block main
+  .container
+    .row
+      .col-md-5
+        +register
+        +send
+      .col-md-5.col-md-offset-1
+        +sign
+        +recover
+        +subscribe
+        img(src="img/master-logo.png" alt="masteralb" class="img-responsive center-block")
+        br
+        br
+        img(src="img/logo-url.png" alt="company-url" class="img-responsive center-block")

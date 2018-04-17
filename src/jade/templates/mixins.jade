@@ -1,0 +1,18 @@
+mixin accept(id, text, val)
+  .checkbox
+    input(type="checkbox" id="#{id}")
+    label(for="#{id}")
+      span
+      | #{text}
+  .form-group
+    input(type="submit" class="btn btn-success btn-block" value="#{val}")
+
+
+mixin buttons(cls1, cls2, val1, val2)
+  .row
+    .col-md-5
+      .form-group
+        input(type="submit" class="btn #{cls1} btn-block" value="#{val1}")
+    .col-md-5.col-md-offset-2
+      .form-group.last-btn
+        input(type="button" class="btn #{cls2} btn-block" value="#{val2}" disabled)

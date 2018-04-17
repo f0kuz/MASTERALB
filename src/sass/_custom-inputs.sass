@@ -1,0 +1,52 @@
+.form-control
+  height: 40px
+  background: $formBg
+  
+input.form-control
+  color: $inputFont
+
+select.form-control
+  color: $inputFont
+
+select, input[type]::-webkit-input-placeholder
+  color: $inputFont
+
+select, input[type]::-moz-input-placeholder
+  color: $inputFont
+
+.send textarea
+  resize: none
+
+.input-group-addon
+  padding: 5px 22px
+  background: $formBg
+
+.glyphicon
+  opacity: .5
+
+//  Custom green checkbox
+.checkbox
+  text-align: left
+
+  input[type="checkbox"]
+    display: none
+
+  label
+    display: flex
+    padding-left: 0
+    line-height: 1.2
+    font-size: 16px
+    font-family: 'Titillium Web', sans-serif
+    color: $inputFont
+
+  input[type="checkbox"] + label span
+    display: inline-block
+    width: 20px
+    height: 20px
+    margin-right: 12px
+    border: 1px solid $inputFont
+    border-radius: 3px
+    cursor: pointer
+
+  input[type="checkbox"]:checked + label span
+    background: url(../img/checkbox_checked.png) no-repeat 50%

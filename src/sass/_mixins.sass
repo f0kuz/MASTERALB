@@ -1,0 +1,31 @@
+=formTemplate($formType, $type, $n)
+  .#{$formType} // name of form type
+
+    .form-bg
+      padding: 20px
+      margin: 25px 0 45px
+      border-radius: 7px
+      background: $formPad
+
+    .#{$type} // name of main form
+      height: auto
+      padding: 20px 20px
+      border-radius: 3px
+      background: $formBg
+
+    .form-group:nth-child(#{$n}) // (n)
+      margin-bottom: 0
+      @if $type == 'sign'
+      margin-bottom: 15px
+
+    .form-group:last-child
+      margin-bottom: 0
+
+    h2
+      margin-top: 0
+      color: #fff
+
+    .btn-block
+      height: 46px
+      border-radius: 3px
+      font-size: 1.3rem

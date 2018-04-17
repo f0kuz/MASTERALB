@@ -1,0 +1,23 @@
+mixin sign
+  .sign-form
+    h2.text-center Sign In Form
+    .form-bg
+      form.sign
+        .form-group
+          .input-group
+            span.input-group-addon
+              span.glyphicon.glyphicon-user
+            input(type="text" class="form-control" placeholder="Your Name")
+        .form-group
+          .input-group
+            span.input-group-addon
+              span.glyphicon.glyphicon-lock
+            input(type="password" class="form-control" placeholder="Password" required)
+        .row
+          .checkbox.col-md-6
+            input(type="checkbox" id="sign-check")
+            label(for="sign-check")
+              span
+              | Remember me
+          .form-group.col-md-5.col-md-offset-1
+            input(type="submit" class="btn btn-success btn-block" value="Sign In")

@@ -1,0 +1,11 @@
+mixin subscribe
+  .subscribe-form
+    h2.text-center Subscribe Form
+    .form-bg
+      form.subscribe
+        .form-group
+          .input-group
+            span.input-group-addon
+              span.glyphicon.glyphicon-envelope
+            input(type="email" class="form-control" placeholder="Enter Your Email")
+        +buttons('btn-success', 'btn-danger', 'Subscribe', 'No, Thanks')
